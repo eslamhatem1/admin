@@ -73,6 +73,7 @@
           "configurations": {
             "production": {
               "browserTarget": "adminProject:build:production"
+
             },
             "development": {
               "browserTarget": "adminProject:build:development"

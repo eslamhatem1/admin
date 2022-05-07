@@ -1,0 +1,178 @@
+<div class="container mt-5">
+  <form [formGroup]="tigetform">
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Number</label>
+      <div class="col-sm-10">
+        <input type="text" #inputdes [class.is-valid]="tigetform.controls['ticketNum']?.valid"
+          [class.is-invalid]="tigetform.controls['ticketNum']?.invalid && tigetform.controls['ticketNum']?.touched"
+          formControlName="ticketNum" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="tigetform.controls['ticketNum'].errors && tigetform.controls['ticketNum'].touched"
+        class="text-danger text-end"
+        [class.d-none]="tigetform.controls['ticketNum']?.valid || tigetform.controls['ticketNum']?.untouched">the Filed
+        is required</small>
+
+    </div>
+
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Date available</label>
+      <div class="col-sm-10">
+        <input type="date" [class.is-valid]="tigetform.controls['Dateavailable']?.valid"
+          [class.is-invalid]="tigetform.controls['Dateavailable']?.invalid && tigetform.controls['Dateavailable']?.touched"
+          formControlName="Dateavailable" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="tigetform.controls['Dateavailable'].errors && tigetform.controls['Dateavailable'].touched"
+        class="text-danger text-end"
+        [class.d-none]="tigetform.controls['Dateavailable']?.valid || tigetform.controls['Dateavailable']?.untouched">the
+        Filed is required</small>
+
+    </div>
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Date Flight</label>
+      <div class="col-sm-10">
+        <input type="date" [class.is-valid]="tigetform.controls['DateFlight']?.valid"
+          [class.is-invalid]="tigetform.controls['DateFlight']?.invalid && tigetform.controls['DateFlight']?.touched"
+          formControlName="DateFlight" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="tigetform.controls['DateFlight'].errors && tigetform.controls['DateFlight'].touched"
+        class="text-danger text-end"
+        [class.d-none]="tigetform.controls['DateFlight']?.valid || tigetform.controls['DateFlight']?.untouched">the
+        Filed is required</small>
+
+    </div>
+
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Time departure</label>
+      <div class="col-sm-10">
+        <input [class.is-valid]="tigetform.controls['Timedeparture']?.valid"
+          [class.is-invalid]="tigetform.controls['Timedeparture']?.invalid && tigetform.controls['Timedeparture']?.touched"
+          type="time" formControlName="Timedeparture" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="tigetform.controls['Timedeparture'].errors && tigetform.controls['Timedeparture'].touched"
+        class="text-danger text-end"
+        [class.d-none]="tigetform.controls['Timedeparture']?.valid || tigetform.controls['Timedeparture']?.untouched">the
+        Filed is required</small>
+
+    </div>
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Time Land</label>
+      <div class="col-sm-10">
+        <input type="time" [class.is-valid]="tigetform.controls['TimeLand']?.valid"
+          [class.is-invalid]="tigetform.controls['TimeLand']?.invalid && tigetform.controls['TimeLand']?.touched"
+          formControlName="TimeLand" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="tigetform.controls['TimeLand'].errors && tigetform.controls['TimeLand'].touched"
+        class="text-danger text-end"
+        [class.d-none]="tigetform.controls['TimeLand']?.valid || tigetform.controls['TimeLand']?.untouched">the Filed is
+        required</small>
+
+    </div>
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Destination</label>
+      <div class="col-sm-10">
+        <input type="text" #inputdes [class.is-valid]="tigetform.controls['Destination']?.valid"
+          [class.is-invalid]="tigetform.controls['Destination']?.invalid && tigetform.controls['priceticket']?.touched"
+          formControlName="Destination" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="tigetform.controls['Destination'].errors && tigetform.controls['Destination'].touched"
+        class="text-danger text-end"
+        [class.d-none]="tigetform.controls['priceticket']?.valid || tigetform.controls['Destination']?.untouched">the
+        Filed is required</small>
+
+    </div>
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">price ticket</label>
+      <div class="col-sm-10">
+        <input [class.is-valid]="tigetform.controls['priceticket']?.valid"
+          [class.is-invalid]="tigetform.controls['priceticket']?.invalid && tigetform.controls['priceticket']?.touched"
+          type="text" formControlName="priceticket" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="tigetform.controls['priceticket'].errors && tigetform.controls['priceticket'].touched"
+        class="text-danger text-end"
+        [class.d-none]="tigetform.controls['priceticket']?.valid || tigetform.controls['priceticket']?.untouched">the
+        Filed is required</small>
+
+    </div>
+
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">type ticket</label>
+      <div class="col-sm-10">
+        <input type="text" [class.is-valid]="tigetform.controls['typeticket']?.valid"
+          [class.is-invalid]="tigetform.controls['typeticket']?.invalid && tigetform.controls['typeticket']?.touched"
+          formControlName="typeticket" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="tigetform.controls['typeticket'].errors && tigetform.controls['typeticket'].touched"
+        class="text-danger text-end"
+        [class.d-none]="tigetform.controls['typeticket']?.valid || tigetform.controls['typeticket']?.untouched">the
+        Filed is required</small>
+
+    </div>
+
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">detalies</label>
+      <div class="col-sm-10">
+        <input type="text" [class.is-valid]="tigetform.controls['detailsTicket']?.valid"
+          [class.is-invalid]="tigetform.controls['detailsTicket']?.invalid && tigetform.controls['detailsTicket']?.touched"
+          formControlName="detailsTicket" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="tigetform.controls['detailsTicket'].errors && tigetform.controls['detailsTicket'].touched"
+        class="text-danger text-end"
+        [class.d-none]="tigetform.controls['detailsTicket']?.valid || tigetform.controls['detailsTicket']?.untouched">the
+        Filed is required</small>
+
+    </div>
+
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">AirPort</label>
+      <div class="col-sm-10">
+        <input type="text" [class.is-valid]="tigetform.controls['airPort']?.valid"
+          [class.is-invalid]="tigetform.controls['airPort']?.invalid && tigetform.controls['airPort']?.touched"
+          formControlName="airPort" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="tigetform.controls['airPort'].errors && tigetform.controls['airPort'].touched"
+        class="text-danger text-end"
+        [class.d-none]="tigetform.controls['airPort']?.valid || tigetform.controls['airPort']?.untouched">the Filed is
+        required</small>
+
+    </div>
+
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">terminal</label>
+      <div class="col-sm-10">
+        <input type="text" [class.is-valid]="tigetform.controls['terminal']?.valid"
+          [class.is-invalid]="tigetform.controls['terminal']?.invalid && tigetform.controls['terminal']?.touched"
+          formControlName="terminal" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="tigetform.controls['terminal'].errors && tigetform.controls['terminal'].touched"
+        class="text-danger text-end"
+        [class.d-none]="tigetform.controls['terminal']?.valid || tigetform.controls['terminal']?.untouched">the Filed is
+        required</small>
+
+    </div>
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">show</label>
+      <div class="col-sm-10">
+        <input type="text" readonly formControlName="isshow" class="form-control" id="inputEmail3">
+      </div>
+
+    </div>
+
+
+    <input (click)="sent()" [disabled]="tigetform.invalid" type="submit" class="btn btn-dark">
+
+
+  </form>
+
+</div>

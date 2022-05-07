@@ -1,0 +1,121 @@
+<div class="container mt-5">
+  <form [formGroup]="lodingorm" (ngSubmit)="edit()">
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Number</label>
+      <div class="col-sm-10">
+        <input type="text" #inputdes  [class.is-valid]="lodingorm.controls['ticketNum']?.valid"   [class.is-invalid]="lodingorm.controls['ticketNum']?.invalid && lodingorm.controls['ticketNum']?.touched" formControlName="ticketNum" class="form-control" id="inputEmail3">
+      </div>
+            <small *ngIf="lodingorm.controls['ticketNum'].errors && lodingorm.controls['ticketNum'].touched" class="text-danger text-end" [class.d-none]="lodingorm.controls['ticketNum']?.valid || lodingorm.controls['ticketNum']?.untouched">the Filed is required</small>
+
+    </div>
+
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Date available</label>
+      <div class="col-sm-10">
+        <input type="date" [class.is-valid]="lodingorm.controls['Dateavailable']?.valid"   [class.is-invalid]="lodingorm.controls['Dateavailable']?.invalid && lodingorm.controls['Dateavailable']?.touched" formControlName="Dateavailable"  class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="lodingorm.controls['Dateavailable'].errors && lodingorm.controls['Dateavailable'].touched" class="text-danger text-end" [class.d-none]="lodingorm.controls['Dateavailable']?.valid || lodingorm.controls['Dateavailable']?.untouched">the Filed is required</small>
+
+    </div>
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Date Flight</label>
+      <div class="col-sm-10">
+        <input type="date" [class.is-valid]="lodingorm.controls['DateFlight']?.valid"   [class.is-invalid]="lodingorm.controls['DateFlight']?.invalid && lodingorm.controls['DateFlight']?.touched" formControlName="DateFlight" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="lodingorm.controls['DateFlight'].errors && lodingorm.controls['DateFlight'].touched" class="text-danger text-end" [class.d-none]="lodingorm.controls['DateFlight']?.valid || lodingorm.controls['DateFlight']?.untouched">the Filed is required</small>
+
+    </div>
+
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Time departure</label>
+      <div class="col-sm-10">
+        <input [class.is-valid]="lodingorm.controls['Timedeparture']?.valid"   [class.is-invalid]="lodingorm.controls['Timedeparture']?.invalid && lodingorm.controls['Timedeparture']?.touched" type="time" formControlName="Timedeparture" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="lodingorm.controls['Timedeparture'].errors && lodingorm.controls['Timedeparture'].touched" class="text-danger text-end" [class.d-none]="lodingorm.controls['Timedeparture']?.valid || lodingorm.controls['Timedeparture']?.untouched">the Filed is required</small>
+
+    </div>
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Time Land</label>
+      <div class="col-sm-10">
+        <input type="time" [class.is-valid]="lodingorm.controls['TimeLand']?.valid"   [class.is-invalid]="lodingorm.controls['TimeLand']?.invalid && lodingorm.controls['TimeLand']?.touched" formControlName="TimeLand" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="lodingorm.controls['TimeLand'].errors && lodingorm.controls['TimeLand'].touched" class="text-danger text-end" [class.d-none]="lodingorm.controls['TimeLand']?.valid || lodingorm.controls['TimeLand']?.untouched">the Filed is required</small>
+
+    </div>
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Destination</label>
+      <div class="col-sm-10">
+        <input type="text" #inputdes  [class.is-valid]="lodingorm.controls['Destination']?.valid"   [class.is-invalid]="lodingorm.controls['Destination']?.invalid && lodingorm.controls['priceticket']?.touched" formControlName="Destination" class="form-control" id="inputEmail3">
+      </div>
+            <small *ngIf="lodingorm.controls['Destination'].errors && lodingorm.controls['Destination'].touched" class="text-danger text-end" [class.d-none]="lodingorm.controls['priceticket']?.valid || lodingorm.controls['Destination']?.untouched">the Filed is required</small>
+
+    </div>
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">price ticket</label>
+      <div class="col-sm-10">
+        <input [class.is-valid]="lodingorm.controls['priceticket']?.valid"   [class.is-invalid]="lodingorm.controls['priceticket']?.invalid && lodingorm.controls['priceticket']?.touched" type="text" formControlName="priceticket" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="lodingorm.controls['priceticket'].errors && lodingorm.controls['priceticket'].touched" class="text-danger text-end" [class.d-none]="lodingorm.controls['priceticket']?.valid || lodingorm.controls['priceticket']?.untouched">the Filed is required</small>
+
+    </div>
+
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">type ticket</label>
+      <div class="col-sm-10">
+        <input type="text" [class.is-valid]="lodingorm.controls['typeticket']?.valid"   [class.is-invalid]="lodingorm.controls['typeticket']?.invalid && lodingorm.controls['typeticket']?.touched" formControlName="typeticket" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="lodingorm.controls['typeticket'].errors && lodingorm.controls['typeticket'].touched" class="text-danger text-end" [class.d-none]="lodingorm.controls['typeticket']?.valid || lodingorm.controls['typeticket']?.untouched">the Filed is required</small>
+
+    </div>
+
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">detalies</label>
+      <div class="col-sm-10">
+        <input type="text" [class.is-valid]="lodingorm.controls['detailsTicket']?.valid"   [class.is-invalid]="lodingorm.controls['detailsTicket']?.invalid && lodingorm.controls['detailsTicket']?.touched" formControlName="detailsTicket" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="lodingorm.controls['detailsTicket'].errors && lodingorm.controls['detailsTicket'].touched" class="text-danger text-end" [class.d-none]="lodingorm.controls['detailsTicket']?.valid || lodingorm.controls['detailsTicket']?.untouched">the Filed is required</small>
+
+    </div>
+
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">AirPort</label>
+      <div class="col-sm-10">
+        <input type="text" [class.is-valid]="lodingorm.controls['airPort']?.valid"   [class.is-invalid]="lodingorm.controls['airPort']?.invalid && lodingorm.controls['airPort']?.touched" formControlName="airPort" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="lodingorm.controls['airPort'].errors && lodingorm.controls['airPort'].touched" class="text-danger text-end" [class.d-none]="lodingorm.controls['airPort']?.valid || lodingorm.controls['airPort']?.untouched">the Filed is required</small>
+
+    </div>
+
+
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">terminal</label>
+      <div class="col-sm-10">
+        <input type="text" [class.is-valid]="lodingorm.controls['terminal']?.valid"   [class.is-invalid]="lodingorm.controls['terminal']?.invalid && lodingorm.controls['terminal']?.touched" formControlName="terminal" class="form-control" id="inputEmail3">
+      </div>
+      <small *ngIf="lodingorm.controls['terminal'].errors && lodingorm.controls['terminal'].touched" class="text-danger text-end" [class.d-none]="lodingorm.controls['terminal']?.valid || lodingorm.controls['terminal']?.untouched">the Filed is required</small>
+
+    </div>
+
+    <input [disabled]="lodingorm.invalid"  type="submit" class="btn btn-dark">
+
+
+  </form>
+
+</div>
+
+
+
+
+
+
+

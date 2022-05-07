@@ -1,0 +1,8 @@
+{
+  "/apidemo/*":{
+    "target":"http//localost:12556",
+    "secure":false,
+    "logLevel":"debug"
+
+  }
+}
